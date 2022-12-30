@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* General */
+
+body {
+	background-color: #f2ebe3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	color: #6c7289;
+	font-family: "Monserrat", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 23px;
+}
+
+.preview-component {
+	max-width: 600px;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.preview-img {
+	background-image: url(./images/image-product-desktop.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.preview-text-box {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.subheading {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 5px;
+	margin-bottom: 1.25rem;
+}
+
+.primary-heading {
+	color: #1c232b;
+	font-family: "Fraunces", serif;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 32px;
+	margin-bottom: 1.5rem;
+}
+
+.preview-text {
+	margin-bottom: 1.875rem;
+	letter-spacing: 0.7px;
+}
+
+.pricing {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1.875rem;
+}
+
+.pricing--new {
+	color: #3c8067;
+	font-family: "Fraunces", serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+}
+
+.pricing--old {
+	text-decoration: line-through;
+}
+
+.btn {
+	background-color: #3c8067;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 1rem;
+	color: white;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #1a4032;
+}
+
+/* below 496px */
+@media (max-width: 31em) {
+	body {
+		padding: 1rem;
+	}
+	.preview-component {
+		grid-template-columns: 1fr;
+	}
+
+	.preview-img {
+		height: 240px;
+	}
+
+	.preview-text-box {
+		padding: 1.5rem;
+	}
+
+	.subheading {
+		margin-bottom: 0.75rem;
+	}
+
+	.primary-heading {
+		margin-bottom: 1rem;
+	}
+
+	.preview-text {
+		margin-bottom: 1.5rem;
+	}
+
+	.pricing {
+		margin-bottom: 1.25rem;
+	}
+}
